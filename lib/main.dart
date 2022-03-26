@@ -23,7 +23,9 @@ class MyApp extends StatelessWidget {
       routes: {
         '/': (context) => ArticleListPage(),
         '/article_web': (context) => ArticleWebView(
-            ModalRoute.of(context)?.settings.arguments as String, url: '',),
+              ModalRoute.of(context)?.settings.arguments as String,
+              url: '',
+            ),
         '/article_detail': (context) => ArticleDetailPage(
             ModalRoute.of(context)?.settings.arguments as Article),
       },
